@@ -34,9 +34,9 @@ Analysis of the housing property data is done through following steps:
 1. Calculate and plot the housing units per year.
 Using `groupby` function to group the data by year, aggregate the results by the mean of the groups and then visualize the results of housing_units_by_year as a bar chart.
 
-![](Images/bokeh_plot(5).png)
+ ![](Images/bokeh_plot(5).png)
 
-![](Images/bokeh_plot(4).png)
+ ![](Images/bokeh_plot(4).png)
 
 
 ### Observation on the overall trend in housing units over the period under analysis
@@ -47,7 +47,7 @@ Using `groupby` function to group the data by year, aggregate the results by the
 - Using `groupby`  and `mean` function to group the data by year and further aggregate the results. Using `sort_values()`, look at the gross rent .
 - Further sort the data to include the averages per year for only the `sale price per square foot` and the `gross rent`. Plot the visualization for both using `hvplot`.
 
-![](Images/bokeh_plot(3).png)
+ ![](Images/bokeh_plot(3).png)
 
 ### Observations on gross rent and average sale price per square foot for San Francisco
 * The lowest gross rent reported for the years included in the DataFrame is in year 2010 of USD 1239.00 which grew to more than thrice in six years.
@@ -62,7 +62,7 @@ Using `groupby` function to group the data by year, aggregate the results by the
 - Further sort the data to include the averages per year for only the sale price per square foot and the gross rent.
 - Create an interactive plot with hvPlot that visualizes both sale_price_sqr_foot and gross_rent creating an interactive widget for neighborhoods.
 
-![](Images/bokeh_plot(2).png)
+ ![](Images/bokeh_plot(2).png)
 
 
 ### Observations on gross rent and average sale price per square foot by Neighborhoods
@@ -75,7 +75,7 @@ Using `groupby` function to group the data by year, aggregate the results by the
 - To build the map, combine the housing average prices data (created during the initial import), with the one which includes the neighborhood location data using `concat` and aggregate the result using `mean`.
 - To create the geospatial visualization, use hvPlot with GeoViews enabled, create a points plot for the the combined DataFrame.
 
-![](Images/bokeh_plot(1).png)
+ ![](Images/bokeh_plot(1).png)
 
 
 ### Neighborhood with the highest gross rent, and the highest sale price per square foot.
